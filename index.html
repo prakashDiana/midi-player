@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIDI Player & Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="controls">
+        <input type="file" id="midiFile" accept=".mid,.midi">
+        <button id="playBtn" disabled>Play</button>
+        <button id="pauseBtn" disabled>Pause</button>
+        <button id="stopBtn" disabled>Stop</button>
+        <span id="trackList"></span>
+    </div>
+    <canvas id="pianoRoll" width="2048" height="640"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/tone@next/build/Tone.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tonejs/midi@next/build/Midi.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
